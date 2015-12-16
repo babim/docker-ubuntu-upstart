@@ -34,7 +34,7 @@ RUN apt-get clean && \
 
 RUN mkdir /var/run/sshd
 # set password root 123456
-RUN echo 'root:123456' | chpasswd
+#RUN echo 'root:123456' | chpasswd
 # allow root ssh
 RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
