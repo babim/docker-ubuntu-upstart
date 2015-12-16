@@ -1,4 +1,4 @@
-FROM ubuntu-upstart
+FROM ubuntu-upstart:ssh
 
 MAINTAINER "Duc Anh Babim" <ducanh.babim@yahoo.com>
 
