@@ -17,7 +17,7 @@ RUN sed -i 's/^#\s*\(deb.*multiverse\)$/\1/g' /etc/apt/sources.list
 RUN apt-get clean && \
     apt-get update && \
     apt-get dist-upgrade -y --force-yes && \
-    apt-get install nano -y
+    apt-get install nano openssh-server -y
     
     ## Fix locale.
 RUN apt-get install language-pack-en -y
