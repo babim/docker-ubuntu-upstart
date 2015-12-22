@@ -30,7 +30,7 @@ RUN apt-get clean && \
 # Set environment variables.
 ENV HOME /root
 ENV LC_ALL en_US.UTF-8
-
+ENV TZ Asia/Ho_Chi_Minh
 # Define working directory.
 WORKDIR /root
 
