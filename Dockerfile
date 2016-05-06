@@ -29,7 +29,6 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
 
-RUN mkdir /var/run/sshd
 # set password root 123456
 RUN echo 'root:123456' | chpasswd
 # allow root ssh
